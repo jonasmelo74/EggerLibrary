@@ -1,0 +1,22 @@
+<mat-card class="mat-elevation-z8">
+    <mat-card-title class="title">Novo livro: </mat-card-title>
+    <form [formGroup]="form">
+        <mat-form-field class="input-name" appearance="fill" >
+            <mat-label>Autor</mat-label>
+            <input matInput placeholder="" formControlName="author" name="name">
+        </mat-form-field>
+
+        <mat-form-field class="input-name" appearance="fill">
+            <mat-label>Nome do Livro</mat-label>
+            <input matInput placeholder="" formControlName="title" name="price">
+        </mat-form-field>
+    </form>
+
+    <button mat-raised-button class="salvar" (click)="createProduct()">
+        Criar
+    </button>
+
+    <button mat-raised-button class="cancelar" (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>

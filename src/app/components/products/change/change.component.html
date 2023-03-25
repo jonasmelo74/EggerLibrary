@@ -1,0 +1,16 @@
+<mat-card class="mat-elevation-z8">
+    <mat-card-title class="title">Alterar Livro: </mat-card-title>
+    <form >
+        <mat-form-field class="input-name" appearance="fill">
+            <mat-label>Autor</mat-label>
+            <input matInput placeholder="" [(ngModel)]="books.author" name="name">
+        </mat-form-field>
+
+        <mat-form-field class="input-name" appearance="fill">
+            <mat-label>Título</mat-label>
+            <input matInput placeholder="" [(ngModel)]="books.title" name="price">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button class="alterar" (click)="change()">Alterar</button>
+    <button mat-raised-button class="cancelar" (click)="cancelChange()">Cancelar</button>
+</mat-card>

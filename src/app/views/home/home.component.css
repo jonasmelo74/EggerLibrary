@@ -1,0 +1,7 @@
+.example-card {
+    max-width: 10000px;
+}
+
+.mat-card-title:not(:first-child), .mat-card-subtitle:not(:first-child) {
+  margin-top: 12px;
+}

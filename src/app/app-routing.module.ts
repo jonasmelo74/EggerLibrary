@@ -1,7 +1,10 @@
+import { ChangeComponent } from './components/products/change/change.component';
+import { DeleteComponent } from './components/products/delete/delete.component';
+import { CreateComponent } from './components/products/create/create.component';
+import { ViewProductComponent } from './views/view-product/view-product.component';
+import { HomeComponent } from './views/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './view/home/home.component';
-import { ViewBookComponent } from './view/view-book/view-book.component';
 
 const routes: Routes = [
   {
@@ -9,21 +12,21 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: "books",
-    component: ViewBookComponent
+    path: "products",
+    component: ViewProductComponent
   },
-  // {
-  //   path: "products/create",
-  //   component: CreateComponent
-  // },
-  // {
-  //   path: "products/delete/:id",
-  //   component: DeleteComponent
-  // },
-  // {
-  //   path: "products/change/:id",
-  //   component: ChangeComponent
-  // }
+  {
+    path: "products/create",
+    component: CreateComponent
+  },
+  {
+    path: "products/delete/:id",
+    component: DeleteComponent
+  },
+  {
+    path: "products/change/:id",
+    component: ChangeComponent
+  }
 ];
 
 @NgModule({

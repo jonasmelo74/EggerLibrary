@@ -1,0 +1,16 @@
+<mat-card class="mat-elevation-z8">
+    <mat-card-title class="title">Excluir Livro: </mat-card-title>
+    <form>
+        <mat-form-field class="input-name" appearance="fill">
+            <mat-label>Autor</mat-label>
+            <input matInput placeholder="" [value]="product?.author" name="name" disabled>
+        </mat-form-field>
+
+        <mat-form-field class="input-name" appearance="fill">
+            <mat-label>Título</mat-label>
+            <input matInput placeholder="" [value]="product?.title" name="price" disabled>
+        </mat-form-field>
+    </form>
+    <button mat-raised-button class="excluir" (click)="deleteProduct()">Excluir</button>
+    <button mat-raised-button class="cancelar" (click)="cancelDelete()">Cancelar</button>
+</mat-card>

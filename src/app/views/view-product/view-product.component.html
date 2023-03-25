@@ -1,0 +1,14 @@
+<form [formGroup]="form">
+  <div class="container-first">
+    <button mat-raised-button (click)="navigateProductCreate()"> <!-- Função com binding de eventos -->
+      Novo Livro
+    </button>
+    <mat-form-field class="search" floatLabel="never">
+      <input matInput placeholder="Search" formControlName="search">
+    </mat-form-field>
+  </div>
+</form>
+
+
+
+<app-read></app-read>

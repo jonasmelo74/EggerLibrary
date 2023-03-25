@@ -1,3 +1,4 @@
+import { ReadComponent } from './components/products/read/read.component';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,3 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   nome = 'Jonas';
 }
+
+ 
